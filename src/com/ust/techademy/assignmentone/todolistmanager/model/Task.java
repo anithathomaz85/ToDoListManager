@@ -1,5 +1,5 @@
 /**
- * 
+ * Model class- Task class
  */
 package com.ust.techademy.assignmentone.todolistmanager.model;
 
@@ -10,14 +10,16 @@ public class Task {
 
 	private String taskName;
 	private String dueDate;
+	private int priority; // Add priority field
 
 	/**
 	 * @param taskName
 	 * @param dueDate
 	 */
-	public Task(String taskName, String dueDate) {
+	public Task(String taskName, String dueDate, int priority) {
 		this.taskName = taskName;
 		this.dueDate = dueDate;
+		this.priority = priority;
 	}
 
 	/**
@@ -48,8 +50,22 @@ public class Task {
 		this.dueDate = dueDate;
 	}
 
+	/**
+	 * @return the priority
+	 */
+	public int getPriority() {
+		return priority;
+	}
+
+	/**
+	 * @param priority the priority to set
+	 */
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
+
 	@Override
 	public String toString() {
-		return "Task: " + taskName + "\tDue date: " + dueDate + "\n";
+		return "Task: " + taskName + "\tDue date: " + dueDate + "\tPriority: " + priority + "\n";
 	}
 }

@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.ust.techademy.assignmentone.todolistmanager.exception;
 
 /**

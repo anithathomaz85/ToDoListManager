@@ -1,5 +1,5 @@
 /**
- * 
+ * Controller class- ToDoController.java
  */
 package com.ust.techademy.assignmentone.todolistmanager.controller;
 
@@ -21,8 +21,9 @@ public class ToDoController {
 	}
 
 	// Adds a new to-do item to the list.
-	public boolean addTask(String taskName, String dueDate) throws InvalidTaskIndexException, InvalidDateException {
-		Task task = new Task(taskName, dueDate);
+	public boolean addTask(String taskName, String dueDate, int priority)
+			throws InvalidTaskIndexException, InvalidDateException {
+		Task task = new Task(taskName, dueDate, priority);
 		return toDoService.addTask(task);
 	}
 

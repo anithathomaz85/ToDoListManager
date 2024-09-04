@@ -35,8 +35,10 @@ public class Main {
 					String taskName = scanner.nextLine();
 					System.out.print("Enter due date (dd-MM-YYYY): ");
 					String dueDate = scanner.nextLine();
+					System.out.print("Enter priority (1-5):");// Enter priority
+					int priority = scanner.nextInt();
 					try {
-						sataus = controller.addTask(taskName, dueDate);
+						sataus = controller.addTask(taskName, dueDate, priority);
 						if (sataus) {
 							// To change the colour of text in a System.out.println, use ANSI escape codes
 							// \u001B[31m - green colour

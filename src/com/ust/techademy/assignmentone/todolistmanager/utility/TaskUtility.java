@@ -1,5 +1,5 @@
 /**
- * 
+ * Utility class - TaskUtility
  */
 package com.ust.techademy.assignmentone.todolistmanager.utility;
 
